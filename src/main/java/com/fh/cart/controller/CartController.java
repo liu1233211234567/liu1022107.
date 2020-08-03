@@ -30,6 +30,9 @@ public class CartController {
 
     @RequestMapping("buy")
     public ServerResponse buy(Integer productId, Integer count, HttpServletRequest request){
+
+        System.out.println("111");
+
         return cartService.buy(productId,count,request);
     }
 
